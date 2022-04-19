@@ -1,0 +1,77 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+.wrapper {
+    width: 750px;
+    height: auto;
+    margin: 50px auto;
+    background: #b4b2b2;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.wrapper .random {
+    height: 350px;
+    padding: 20px 50px 50px;
+    background: #f1f1f1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .random input[type="text"] {
+    width: 5%;
+}
+
+.wrapper .random #resultRandom {
+    width: 90%;
+    height: 15%;
+    margin: 0 auto;
+    padding: 10px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+.wrapper .random #btn {
+    width: 35%;
+    height: 15%;
+    margin-top: 15px;
+    background: rgb(120, 151, 251);
+    border: none;
+    color: #fff;
+
+}
+
+.wrapper #addData {
+    height: 200px;
+    padding: 10px 50px;
+    background: #f1f1f1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+}
