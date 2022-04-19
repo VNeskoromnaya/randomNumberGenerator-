@@ -1,11 +1,3 @@
-/*  Логика: 
-задаем диапазон чисел, выставляем количество чисел в поле (которые должны отражаться), 
-нажимаем на кнопку "Сгенерировать " и в div "result" выводятся цифры, которые также попадают в массив 
-для дальнейшей работы с ними
-
-очистить поле div "result" после обновления страницы
-*/
-
 const from = document.getElementById('from'),
     to = document.getElementById('to'),
     numOfGenerated = document.getElementById('numOfGenerated'),
@@ -20,7 +12,7 @@ function getRandom() {
     // выведение     
     let min = parseInt(from.value);
     let max = parseInt(to.value);
-    let num = min + Math.floor(Math.random() * (max-min)); // такая формула позволяет включать в массив и отр числа
+    let num = min + Math.floor(Math.random() * (max-min)); 
     resultRandom.innerHTML += (num + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
 
     arr.push(num);
@@ -62,4 +54,3 @@ btn.addEventListener('click', (e) => {
     }
     mathOperations();
 });
-
